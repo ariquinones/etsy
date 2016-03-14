@@ -1,0 +1,156 @@
+* {
+	margin: 0; 
+	box-sizing: border-box;
+}
+.header {
+	width: 100%;
+	text-align: center;
+    padding: .5%;
+}
+.etsyLogo {
+	width: 5%;
+	height: 5%;
+	vertical-align: middle;
+}
+.headerList {
+	display: inline;
+}
+.headerListItem {
+	display: inline;
+	padding: 7%;
+	color: #6C809A;
+}
+#signInButton {
+	text-decoration: underline;
+}
+.headerImageContainer {
+	width: 100%;
+	height: 400px;
+	overflow: hidden;
+	position: relative;
+}
+.headerImage {
+	width: 100%;
+}
+.tagline {
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    transform: translateX(-50%);
+    font-size: 3em;
+    color: white;
+    width: 65%;
+
+}
+.searchOptionsContainer {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5);
+	text-align: right;
+}
+.search {
+	background: transparent;
+	font-size: 1em;
+	padding: 1%;
+	color: white;
+	margin: .5%;
+	border: none;
+	width: 25%;
+}
+.search:focus {
+	outline: none;
+}
+.pageIntroText {
+	font-size: 1.5em;
+	color: gray;
+	margin: 4% auto;
+	text-align: center;
+}
+/*Home View */
+.mainContainer {
+	margin: auto;
+	text-align: center;
+	width: 90%;
+}
+.etsyItem {
+    box-shadow: 2px 1px 5px rgba(221,221,221,.5);
+    text-align: center;
+    width: 20%;
+    display: inline-block;
+    margin: 2%;
+    border: .25px solid rgba(0,0,0,0.1);
+    padding: .5%;
+}
+.etsyItem:hover {
+	cursor: pointer;
+}
+.etsyItem * {
+	margin: 0;
+}
+.description {
+	font-size: 1em;
+}
+.price {
+	color: #7AE7C7;
+}
+.title {
+	display: inline-block;
+	margin-right: 5%;
+	font-size: .75em;
+	color: gray;
+}
+
+.loadMore {
+	background: #6C809A;
+	text-align: center;
+	margin: 5% auto;
+	width: 80%;
+	padding: 1%;
+}
+.loadMore p {
+	color: white;
+}
+.loadMore:hover {
+	cursor: pointer;
+}
+/* Detail View */
+.itemTitle {
+	text-align: center;
+	font-size: 2em;
+	margin: 5% auto;
+	width: 75%;
+}
+.detailImageView {
+	width: 45%;
+	display: inline-block;
+	min-height: 400px;
+	margin-right: 1%;
+}
+
+.detailDescriptionView {
+	width: 30%;
+	display: inline-block;
+	border: 1px solid gray;
+	min-height: 400px;
+	vertical-align: top;
+	text-align: center;
+	padding: 1%;
+	box-shadow: 2px 1px 5px rgba(0,0,0,.5);
+}
+.detailDescriptionView p {
+	margin: 5% auto;
+}
+.categoriesPath {
+	list-style-type: none;
+	text-align: left;
+	font-style: oblique;
+}
+.addToCart {
+	padding: 5%;
+	background: #7AE7C7;
+	color: #6C809A;
+	border: none; 
+	border-radius: 5px;
+	font-weight: bold;
+}
