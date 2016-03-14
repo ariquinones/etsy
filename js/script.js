@@ -93,7 +93,8 @@ var DetailView = Backbone.View.extend ({
 var EtsyRouter = Backbone.Router.extend({
 	routes: {
 		"home/": "handleHomeView",
-		"detail/:id": "handleDetailView"
+		"detail/:id": "handleDetailView",
+		"*default": "handleDefault"
 	},
 	handleHomeView: function(search) {
 		var newHomeModel = new HomeModel()
@@ -105,6 +106,9 @@ var EtsyRouter = Backbone.Router.extend({
 		newDetailModel.generateUrl(id)
 		var newDetailView = new DetailView(newDetailModel)
 		newDetailModel.fetch()
+	},
+	handleDefault: function() {
+		location.hash = "home/"
 	},
 	initialize: function() {
 		Backbone.history.start()
