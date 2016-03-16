@@ -34,12 +34,12 @@
 }
 .tagline {
     position: absolute;
-    top: 35%;
-    left: 35%;
+    top: 20%;
+    left: 30%;
     transform: translateX(-50%);
     font-size: 3em;
     color: white;
-    width: 65%;
+    width: 50%;
 
 }
 .searchOptionsContainer {
@@ -66,6 +66,11 @@
 	color: gray;
 	margin: 4% auto;
 	text-align: center;
+}
+.sortOptions {
+	margin-top: 2%;
+    margin-left: 2%;
+    width: 2%;
 }
 /*Home View */
 .mainContainer {
@@ -103,16 +108,18 @@
 
 .loadMore {
 	background: #6C809A;
-	text-align: center;
 	margin: 5% auto;
 	width: 80%;
 	padding: 1%;
 }
-.loadMore p {
-	color: white;
-}
 .loadMore:hover {
 	cursor: pointer;
+}
+.loadMore p {
+	color: white;
+	display: inline;
+	margin-left: 10%;
+    margin-right: 10%;
 }
 /* Detail View */
 .itemTitle {
@@ -122,12 +129,21 @@
 	width: 75%;
 }
 .detailImageView {
-	width: 45%;
+	width: 50%;
 	display: inline-block;
 	min-height: 400px;
 	margin-right: 1%;
+	margin-bottom: 5%;
 }
-
+.imageDetail {
+	width: 100%;
+	border-radius: 2%;
+}
+.smallerDetailImage {
+    width: 20%;
+    margin: 2%;
+    border-radius: 10%;
+}
 .detailDescriptionView {
 	width: 30%;
 	display: inline-block;
@@ -141,6 +157,9 @@
 .detailDescriptionView p {
 	margin: 5% auto;
 }
+.listingsFromArtist:hover {
+	cursor: pointer;
+}
 .categoriesPath {
 	list-style-type: none;
 	text-align: left;
@@ -153,4 +172,10 @@
 	border: none; 
 	border-radius: 5px;
 	font-weight: bold;
+}
+
+@media only screen and (max-width: 900px) {
+	.etsyItem {
+		width: 40%;
+	}
 }
