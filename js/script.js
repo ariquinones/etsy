@@ -303,7 +303,7 @@ var EtsyRouter = Backbone.Router.extend({
 		"user/:userId": "handleUserIdView",
 		"under25": "handleSortView",
 		"has3images": "handleImagesSortView",
-		//"*default": "handleDefault"
+		"*default": "handleDefault"
 	},
 	handleHomeView: function(search) {
 		var newHomeModel = new HomeModel()
